@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* oswald-regular - latin */
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/oswald-v17-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Oswald Regular'), local('Oswald-Regular'),
+         url('/fonts/oswald-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/oswald-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/oswald-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/oswald-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/oswald-v17-latin-regular.svg#Oswald') format('svg'); /* Legacy iOS */
+  }
+  /* staatliches-regular - latin */
+@font-face {
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/staatliches-v2-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Staatliches Regular'), local('Staatliches-Regular'),
+         url('../fonts/staatliches-v2-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/staatliches-v2-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/staatliches-v2-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/staatliches-v2-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/staatliches-v2-latin-regular.svg#Staatliches') format('svg'); /* Legacy iOS */
+  }
+html,body{
+    margin-top : 3rem;
+    height:100%;
+    font-family:'Oswald';
+    font-size: 16px;
+}
+
+.form-row .col .form-control{
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}
+
+#navi{
+ background-color: black;
+ font-family:'Staatliches';
+ font-size: 1.6rem;
+ 
+}
+
+.navbar-brand .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;..");
+  }
+a{
+    color:whitesmoke;
+}
+a:hover{
+    text-decoration: none;
+    color: grey;
+}
+
+.moonicon{
+    width:3rem;
+    height:3rem;
+    margin:0;
+    padding:0;
+}
+
+#navi .navbar-brand{
+    color:whitesmoke;
+    font-size: 3rem;
+}
+
+.navbar-nav .nav-item{
+    color:whitesmoke;
+}
+.navbar-nav .nav-item .nav-link{
+    color: white;
+}
+
+.box{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50px; 
+    }
+
+#hero{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('images/moon-maini.jpg') center bottom no-repeat;
+    background-size: cover;
+    
+}
+.hero-content{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50px;
+    padding:5px;
+    text-align: center;
+}
+.tag-main{
+    font-size: 3rem;
+    font-weight:900;
+    color: #f0c420;
+    margin: 20px;
+    text-shadow: 3px 2px black;
+}
+
+
+
+#description{
+    height:100%;
+    background: #d0d5d2 url('images/section.jpg') center center no-repeat;
+    background-size: cover;   
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    text-shadow: 3px 2px black;
+    
+}
+@media screen and (max-width:400px) {
+  #description  { font-size: 1.2rem; 
+                                     }
+.desc{
+    height:50%;
+}
+                             
+}
+.desc{
+    background: rgba(0,0,0,0.5);
+    color:#f0c420;
+    
+}
+
+.desc-text{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.desc-text i{
+    margin: 0.5rem;
+    padding-bottom: 1rem;
+    font-size:3rem;
+}
+.card-header{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+
+    
+@media screen and (max-width:400px){
+    #prices{
+    
+        font-size: 1rem;
+    }
+    .box{
+        width: 50%;
+    }
+}
+
+#tip-footer{
+    background: #222;
+    color : white;
+    font-size :1rem;
+    padding: 2.4rem 0;
+}
+
+#prices{
+    padding: 5px;
+    background: url('/images/moon-surface.jpg') center center no-repeat;
+
+
+}
+
+@media screen and (min-width:900px){
+    #prices{
+        height: 98vh;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+}
+.card{
+    border: 0.2rem solid black;
+    width:100%;
+    background-image: linear-gradient(to bottom,darkgrey,whitesmoke);
+}
+.card-header{
+    background-color:#f0c420;
+}
+.card:hover{
+    box-shadow: 10px 10px 10px rgb(0,0,0);
+}
+.card-body{
+    margin: 0 3rem 0 3rem;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.card-text{
+    font-size: 3rem;
+    font-weight: 400;
+}
+.card-footer .btn{
+    font-size: 2rem;
+}
+.btn{
+    background-color: whitesmoke;
+    color:black;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#tip-footer{
+    font-size: 1.5rem;
+}
+
+.fb,.twitter,.ig,.pin{
+    margin: 0rem 0 1rem 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50px;
+    
+}
+.fb:hover,.twitter:hover,.ig:hover,.pin:hover{
+    box-shadow:2px 2px rgba(208,213,210,0.8);
+}
